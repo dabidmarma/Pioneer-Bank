@@ -29,6 +29,11 @@ const withdrawBtn = document.querySelector("#addWithdraw");
 withdrawBtn.addEventListener("click", function () {
 
     const withdrawNumber = getWithdrawNumber("#withdrawAmount")
+
+    updateSpan("#currentWithdraw", withdrawNumber);
+    updateSpan("#currentBalance", -1 * withdrawNumber);
+
+    document.querySelector("#withdrawAmount").value = "";
 })
 
 function getWithdrawNumber(id){
