@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    padding: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.submit-area{
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+    padding: 40px;
+}
+#transaction-area{
+    display: none;
+}
+
+.status{
+    margin: 0px 20px;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+.status h5{
+    font-weight: 600;
+}
+.deposit{
+    background-image: linear-gradient(to right, #12aacf 0%, #083486 100%);
+}
+.withdraw{
+    background-image: linear-gradient(to right, #ffe058 0%, #ff136f 100%);
+}
+
+.balance{
+    background-image: linear-gradient(to right, #9810aa 0%, #ff136f 100%);
+}
