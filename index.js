@@ -15,11 +15,15 @@ const depositBtn = document.querySelector("#addDeposit");
 depositBtn.addEventListener("click", function () {
     const depositAmount = document.querySelector("#depositAmount").value;
     const depositNumber = parseFloat(depositAmount);
-    document.querySelector("#depositAmount").value = "";
 
-    updateSpan("#currentDeposit", depositNumber);
+    if(depositNumber < 0){
+        alert("Deposit Number Can'not Be Negative");
+    }else{
+        updateSpan("#currentDeposit", depositNumber);
 
-    updateSpan("#currentBalance", depositNumber);
+        updateSpan("#currentBalance", depositNumber);
+        document.querySelector("#depositAmount").value = "";
+    }
 
 })
 
